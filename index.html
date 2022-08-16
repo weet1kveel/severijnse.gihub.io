@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<HTML lang=nl>
+	<HEAD>
+		<meta charset=utf8>
+		<meta name=descreption="Stramien stylesheet">
+		<meta name=keywords="css,html">
+		
+		<meta http-equiv="refresh" content="15">
+		<TITLE>Birdw8 PEITO20EITA</TITLE>
+
+		<LINK rel="stylesheet" href="css/website.css">
+		<link rel="icon" type="image/png" href="img/bird_angrybirds_cartoon_2870.png">
+	</HEAD>
+
+<BODY>
+	<HEADER class="blok">
+		<DIV class="logo">
+			<img class="logo" src="img/bird_angrybirds_cartoon_2870.png" alt="Birdwacht">
+		</DIV>
+		
+		<DIV class="logo">
+			<P class="logotekst">Birdw8 Demo applicatie</P>
+		</DIV>
+		
+		<DIV class=" logo login">
+			<?PHP require_once("include/login.php"); // Inloggen mogelijk maken ?>
+		</DIV>
+	</HEADER>
+
+
+		<NAV class="blok">
+			<P class="keuzetekst">Hoofdmenu</P>
+			<UL>
+				<LI class="keuzetekst"><A class="keuzetekst" href="index.php">Start</A></LI>
+			</UL>
+			<P class="keuzetekst">Lidmaatschap</P>
+			<UL>
+				<LI class="keuzetekst"><A class="keuzetekst" href="leden.php?pagina=read">Informatie</A></LI>
+				<LI class="keuzetekst"><A class="keuzetekst" href="leden.php?pagina=create">Aanmelden</A></LI>
+				<LI class="keuzetekst"><A class="keuzetekst" href="leden.php?pagina=update">Wijzigen</A></LI>
+				<LI class="keuzetekst"><A class="keuzetekst" href="leden.php?pagina=delete">Afmelden</A></LI>
+			</UL>
+
+			<P class="keuzetekst">Aanmelden voor (leden)</P>
+			<UL>
+				<LI class="keuzetekst"><A class="keuzetekst" href="#">Excursies</A></LI>
+				<LI class="keuzetekst"><A class="keuzetekst" href="#">Werkgroepen</A></LI>
+			</UL>
+
+			<P class="keuzetekst">Overig</P>
+			<UL>
+				<LI class="keuzetekst"><A class="keuzetekst" href="#">Social media</A></LI>
+				<LI class="keuzetekst"><A class="keuzetekst" href="#">Doneren</A></LI>
+				<LI class="keuzetekst"><A class="keuzetekst" href="#">Over ons</A></LI>
+			</UL>
+		</NAV>
+
+		<MAIN class="blok">
+			<P>De BirdW8 is een vereniging van natuurliefhebbers. De leden zijn vooral vogelliefhebber en vinden het leuk om in verenigingsvorm contact met elkaar te hebben. Het doel van de vereniging is de instandhouding en zo mogelijk verbetering van de vogelstand en haar leefmilieu en daarbuiten.</P>
+			<P>De vereniging tracht dit doel te bereiken door:</P>
+			<OL>
+				<LI>het bevorderen van de naleving van bepalingen en voorschriften op het gebied van de bescherming van de vogelstand;</LI>
+				<LI>het maken van propaganda ter verbreiding van de vogelbeschermingsgedachte;</LI>
+				<LI>het verwerven van steun bij overheden, corporaties en particulieren voor de verwezenlijking van gemeld doel;</LI>
+				<LI>alle overige wettelijke haar ten dienste staande middelen, welke voor het doel van de vereniging bevorderlijk kunnen zijn; een en ander in de ruimste zin van het woord.</LI>
+			</OL>
+
+			<?PHP require_once("include/db_connectie.php"); // Testen of we een connectie kunnen maken ?>
+		</MAIN>
+
+
+	<FOOTER class="blok">
+		<P>De vereniging heet leden en donateurs van harte welkom. Momenteel telt de vereniging circa 485 leden en ongeveer 200 donateurs. Een lid ontvangt dit blad viermaal per jaar en is welkom op alle activiteiten.
+		De contributie bedraagt vanaf 2020 minimaal € 25,-. Geef je de voorkeur aan het donateurschap dan kost dat vanaf 2015 minimaal € 8,-- per jaar.</P>
+		<P>&copy; 2022 Firma List & Bedrog, subholding van <A href="https://gerritdejager.nl/opdrachten/biereco-bouwmaat/" target="_blank">Biereco</A>.</P>
+		<P>INBAN: NL20KNAB0903039184, BTW: NL728597123B61, KVK 123499, Adres: 5103BN, 98, Telefoon: 0555-23-456</P>
+	</FOOTER>
+
+</BODY>
+</HTML>
